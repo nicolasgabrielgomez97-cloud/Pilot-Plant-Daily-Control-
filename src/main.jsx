@@ -5,7 +5,9 @@ import {Activity,Plus,Search,CalendarDays,AlertTriangle,CheckCircle2,Clock3,Clip
 import {columns,initialTasks,blankTask,fronts} from './data';
 import './style.css';
 
-const configured = !!(import.meta.env.VITE_SUPABASE_URL && import.meta.env.VITE_SUPABASE_ANON_KEY);
+// Demo publico: sin autenticacion ni acceso a la base Supabase.
+// Los datos se guardan exclusivamente en el navegador de cada persona.
+const configured = false;
 const supabase = configured ? createClient(import.meta.env.VITE_SUPABASE_URL,import.meta.env.VITE_SUPABASE_ANON_KEY) : null;
 const KEY='pilot-plant-daily-v1';
 const statuses=[{id:'backlog',label:'Backlog'}, {id:'ready',label:'Ready'},...columns];
