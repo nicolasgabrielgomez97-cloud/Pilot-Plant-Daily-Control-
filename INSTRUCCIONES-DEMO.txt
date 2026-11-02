@@ -1,0 +1,9 @@
+PILOT PLANT DAILY - DEMO SIN LOGIN
+
+1. En GitHub, reemplaza solo src/main.jsx con el archivo de este ZIP.
+2. Hace Commit changes. Vercel desplegara la nueva version.
+3. Abri la URL normal. No pedira login.
+
+AVISO: cada navegador guarda sus tareas en localStorage. No existe sincronizacion entre Nico, Julieta y Martin. La base de Supabase no se consulta ni se modifica. Las variables VITE_ pueden quedar cargadas en Vercel: este codigo las ignora. No cargar informacion sensible ni usar como tablero colaborativo definitivo.
+
+Para volver a modo colaborativo protegido, recuperar el main.jsx anterior desde el historial de GitHub.
